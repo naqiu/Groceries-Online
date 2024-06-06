@@ -1,0 +1,137 @@
+﻿:root {
+    --primary-color: #c42ca3;
+    --primary-dark: #8a0d7b;
+    --secondary-color: #6c757d;
+    --table-header-bg: #f3f3f3;
+}
+
+.leftColumn {
+    width: 600px;
+    float: left;
+    margin-top: 10px;
+}
+
+.rightColumn {
+    margin-left: 650px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.text-primary, a{
+    color: var(--primary-color) !important;
+}
+
+    a.text-primary:hover, a.text-primary:focus {
+        color: var(--primary-dark) !important;
+    }
+
+    a:hover {
+        color: var(--primary-dark) !important;
+    }
+
+.btn {
+    border-radius: 40px;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+    .btn-primary:hover,
+    .btn-outline-primary:hover {
+        color: #fff !important;
+        background-color: var(--primary-dark) !important;
+        border-color: var(--primary-dark) !important;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+        box-shadow: 0 0 0 0.2rem rgba(196, 44, 163, 0.5) !important;
+    }
+
+.form-control:focus {
+    border-color: #ebaadd;
+    box-shadow: 0 0 0 0.2rem rgba(196, 44, 163, 0.5);
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+
+.btn-outline-secondary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+    .btn-outline-secondary:hover,
+    .btn-outline-secondary:focus,
+    .btn-outline-secondary:active {
+        color: #fff;
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+
+.ctr {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.table .th {
+    background-color: var(--table-header-bg);
+    overflow: hidden;
+    color: var(--primary-color) !important;
+}
+
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .table th {
+        border-top: 0;
+    }
+
+    .table td {
+        border-top: 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.navclr {
+    background-color: #fce5ff !important;
+    color: #3e2180;
+}
+
+.form-control {
+    display: inline;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
