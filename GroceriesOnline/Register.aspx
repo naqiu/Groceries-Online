@@ -4,6 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Register - GroceriesOnline</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="Styles/Style.css" rel="stylesheet" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,38 +36,25 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            width: 300px;
+            width: 340px;
         }
-        .register-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .register-container label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .register-container input, .register-container button {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        .register-container button {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .register-container button:hover {
-            background-color: #45a049;
-        }
-        .register-container .login-link {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
+
+            .register-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .register-container label {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .register-container .btn {
+                padding-left: 20px;
+                padding-right: 20px;
+                display: block;
+            }
+
     </style>
 </head>
 <body>
@@ -86,8 +76,8 @@
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
                 <label for="confirmPassword">Confirm Password</label>
                 <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
-                <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" CssClass="btn btn-primary" />
-                <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="Login.aspx" CssClass="login-link">Login</asp:HyperLink>
+                <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" CssClass="btn btn-primary mt-3 mx-auto" />
+                <p class="text-center mt-3">Already register? <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="Login.aspx" CssClass="login-link">Login</asp:HyperLink></p>
             </div>
         </form>
     </div>
