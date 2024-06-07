@@ -16,3 +16,5 @@ ASP.NET WebApp C#
 8.	User registration and login - customer and admin
 9.	Page authorization - customer and admin
 10.	Reporting of detail sales and executive summary of sales - admin
+
+test
