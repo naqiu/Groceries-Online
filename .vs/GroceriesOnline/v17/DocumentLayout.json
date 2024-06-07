@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repos\\GitHub\\GroceriesOnline\\",
+  "WorkspaceRootPath": "C:\\Repos\\GitHub\\Groceries-Online\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|c:\\repos\\github\\groceriesonline\\groceriesonline\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|c:\\repos\\github\\groceries-online\\groceriesonline\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\usercontrols\\loginstatus.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\usercontrols\\loginstatus.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\usercontrols\\loginstatus.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\shop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\shop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\shop.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\usercontrols\\loginstatus.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\usercontrols\\loginstatus.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\usercontrols\\loginstatus.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\GroceriesOnline\\groceriesonline\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -44,9 +44,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LoginStatus.ascx.cs",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
               "RelativeDocumentMoniker": "GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
               "RelativeToolTip": "GroceriesOnline\\UserControls\\LoginStatus.ascx.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAcwBkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,9 +56,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Web.config",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Web.config",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Web.config",
               "RelativeDocumentMoniker": "GroceriesOnline\\Web.config",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Web.config",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Web.config",
               "RelativeToolTip": "GroceriesOnline\\Web.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -69,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LoginStatus.ascx",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\UserControls\\LoginStatus.ascx",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\UserControls\\LoginStatus.ascx",
               "RelativeDocumentMoniker": "GroceriesOnline\\UserControls\\LoginStatus.ascx",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\UserControls\\LoginStatus.ascx",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\UserControls\\LoginStatus.ascx",
               "RelativeToolTip": "GroceriesOnline\\UserControls\\LoginStatus.ascx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
@@ -81,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Default.aspx",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Default.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Default.aspx",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Default.aspx",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Default.aspx",
               "RelativeToolTip": "GroceriesOnline\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -94,10 +94,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Site.Master",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Site.Master",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Site.Master",
               "RelativeDocumentMoniker": "GroceriesOnline\\Site.Master",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Site.Master",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Site.Master",
               "RelativeToolTip": "GroceriesOnline\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-06-06T17:45:09.807Z",
               "EditorCaption": ""
@@ -106,9 +107,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Style.css",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Styles\\Style.css",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Styles\\Style.css",
               "RelativeDocumentMoniker": "GroceriesOnline\\Styles\\Style.css",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Styles\\Style.css",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Styles\\Style.css",
               "RelativeToolTip": "GroceriesOnline\\Styles\\Style.css",
               "ViewState": "AQIAAG8AAAAAAAAAAAAAAIcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -118,9 +119,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Shop.aspx",
-              "DocumentMoniker": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Shop.aspx",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Shop.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Shop.aspx",
-              "ToolTip": "C:\\Repos\\GitHub\\GroceriesOnline\\GroceriesOnline\\Shop.aspx",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Shop.aspx",
               "RelativeToolTip": "GroceriesOnline\\Shop.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
