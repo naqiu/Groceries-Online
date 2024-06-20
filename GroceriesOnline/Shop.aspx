@@ -11,7 +11,7 @@
       <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" DataSourceID="sdsCategory" DataTextField="CatTitle" DataValueField="CatId" CssClass="form-control fit-content mt-1 mb-1">
       </asp:DropDownList>
             </p>
-            <asp:GridView ID="GridViewItems" runat="server" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="sdsItem" AllowPaging="True" AllowSorting="True" CssClass="table table-hover" GridLines="None" BorderStyle="None">
+            <asp:GridView ID="GridViewItems" runat="server" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="sdsItem" AllowPaging="True" AllowSorting="True" CssClass="table table-hover" GridLines="None" BorderStyle="None" OnSelectedIndexChanged="GridViewItems_SelectedIndexChanged1">
                 <Columns>
                     <asp:ImageField DataImageUrlField="ItemImage" DataImageUrlFormatString="Images/Items/{0}">
                         <ControlStyle Width="70px" />
@@ -19,8 +19,10 @@
                     <asp:BoundField DataField="ItemId" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="ItemId" />
                     <asp:BoundField DataField="ItemTitle" HeaderText="Item" SortExpression="ItemTitle" />
                     <asp:BoundField DataField="ItemDesc" HeaderText="Description" SortExpression="ItemDesc" />
-                    <asp:BoundField DataField="ItemPrice" HeaderText="Price" SortExpression="ItemPrice" DataFormatString="{0:c2}" />
-                    <asp:CommandField ButtonType="Button" ShowHeader="True" ShowSelectButton="True" ControlStyle-CssClass="btn btn-outline-primary" />
+                    <asp:BoundField DataField="ItemPrice" HeaderText="Price" SortExpression="ItemPrice" DataFormatString="{0:2}" FooterText="RM" />
+                    <asp:CommandField ButtonType="Button" ShowHeader="True" ShowSelectButton="True" ControlStyle-CssClass="btn btn-outline-primary" >
+<ControlStyle CssClass="btn btn-outline-primary"></ControlStyle>
+                    </asp:CommandField>
                 </Columns>
                 <HeaderStyle CssClass="th" />
             </asp:GridView>
@@ -35,7 +37,7 @@
             <p>
                 Quantity:
        <asp:TextBox ID="txtQuantity" runat="server" TextMode="Number" Width="50px" CssClass="form-control">1</asp:TextBox>&nbsp;
-       <asp:Button ID="btnAddItem" runat="server" Text="Add Item to Cart" CssClass="btn" />
+       <asp:Button ID="btnAddItem" runat="server" Text="Add Item to Cart" CssClass="btn" OnClick="btnAddItem_Click1" />
             </p>
             <p>
                 <asp:Label ID="lblMessage1" runat="server"></asp:Label>
@@ -51,15 +53,28 @@
             </p>
             <p>
 
-                <asp:GridView ID="GridViewCart" runat="server"></asp:GridView>
+                <asp:GridView ID="GridViewCart" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceCart">
+                    <Columns>
+                        <asp:BoundField DataField="ItemId" HeaderText="Item Id" SortExpression="ItemId" />
+                        <asp:BoundField DataField="ItemTitle" HeaderText="Item Title" SortExpression="ItemTitle" />
+                        <asp:BoundField DataField="ItemPrice" HeaderText="Item Price" SortExpression="ItemPrice" />
+                        <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+                        <asp:BoundField DataField="SubTotal" HeaderText="SubTotal" ReadOnly="True" SortExpression="SubTotal" />
+                    </Columns>
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSourceCart" runat="server" ConnectionString="<%$ ConnectionStrings:connGrocerShop %>" SelectCommand="spSalesGetItems" SelectCommandType="StoredProcedure">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="lblSalesId" Name="salesid" PropertyName="Text" Type="String" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
                 Total amount:
           <asp:Label ID="lblTotalAmountCart" runat="server" Text="RM0.00">
           </asp:Label>
             </p>
             <p>
-                <asp:Button ID="btnConfirm" runat="server" Text="Confirm Sales" CssClass="btn btn-primary" />&nbsp;
-          <asp:Button ID="btnCancel" runat="server" Text="Cancel Sales" CssClass="btn" />&nbsp;
-          <asp:Button ID="btnNew" runat="server" Text="New Sales" CssClass="btn" />
+                <asp:Button ID="btnConfirm" runat="server" Text="Confirm Sales" CssClass="btn btn-primary" OnClick="btnConfirm_Click1" />&nbsp;
+          <asp:Button ID="btnCancel" runat="server" Text="Cancel Sales" CssClass="btn" OnClick="btnCancel_Click1" />&nbsp;
+          <asp:Button ID="btnNew" runat="server" Text="New Sales" CssClass="btn" OnClick="btnNew_Click1" />
             </p>
             <p>
                 <asp:Label ID="lblMessage2" runat="server"></asp:Label>
