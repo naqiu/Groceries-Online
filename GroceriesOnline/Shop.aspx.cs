@@ -232,5 +232,49 @@ namespace GroceriesOnline
             GridViewItems.PageIndex = 0;
             GridViewItems.DataBind();
         }
+
+        protected void btnConfirm_Click1(object sender, EventArgs e)
+        {
+            SalesConfirm();
+            DisplayInvoice();
+        }
+
+        protected void btnCancel_Click1(object sender, EventArgs e)
+        {
+            SalesRemoveNotConfirmed();
+            ClearAll();
+            GenerateSalesId();
+            ddlCategory.DataBind();
+            GridViewItems.PageIndex = 0;
+            GridViewItems.DataBind();
+
+        }
+
+        protected void btnNew_Click1(object sender, EventArgs e)
+        {
+            ClearAll();
+            GenerateSalesId();
+            ddlCategory.DataBind();
+            GridViewItems.PageIndex = 0;
+            GridViewItems.DataBind();
+
+        }
+
+        protected void GridViewItems_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            lblItemId.Text = GridViewItems.SelectedRow.Cells[1].Text;
+            lblItemTitle.Text = GridViewItems.SelectedRow.Cells[2].Text;
+            lblItemPrice.Text = GridViewItems.SelectedRow.Cells[3].Text;
+
+        }
+
+        protected void btnAddItem_Click1(object sender, EventArgs e)
+        {
+            SalesAddItem();
+            GridViewCart.DataBind();
+            SalesGetTotalAmount();
+
+
+        }
     }
 }
