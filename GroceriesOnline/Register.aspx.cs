@@ -27,7 +27,7 @@ namespace GroceriesOnline
             }
             else
             {
-                Label1.Text = "Passwords do not match";
+                Label1.Text = "Passwords do not test";
                 Label1.Visible = true;
             }
         }
