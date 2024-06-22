@@ -30,8 +30,8 @@
                 <nav class="nav">
                     <asp:HyperLink ID="HyperLink1" runat="server" CssClass="nav-link" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Shop.aspx" CssClass="nav-link">Shop</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="#" CssClass="nav-link">Locations</asp:HyperLink>
-
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin.aspx" CssClass="nav-link" Visible="False">Admin</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Location.aspx" CssClass="nav-link">Locations</asp:HyperLink>
                 </nav>
             </div>
         </nav>
@@ -62,9 +62,10 @@
                 <div class="col-6 col-md">
                     <h5>Pages</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Home</a></li>
-                        <li><a class="text-muted" href="#">Shop</a></li>
-                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><asp:HyperLink ID="HyperLink5" runat="server" CssClass="text-muted" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink6" runat="server" CssClass="text-muted" NavigateUrl="~/Shop.aspx">Shop</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink7" runat="server" CssClass="text-muted" NavigateUrl="~/Location.aspx">Location</asp:HyperLink></li>
+                        
                     </ul>
                 </div>
                 <div class="col-6 col-md">

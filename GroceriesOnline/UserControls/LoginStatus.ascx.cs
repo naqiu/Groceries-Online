@@ -36,5 +36,6 @@ namespace GroceriesOnline.UserControls
             Session.Clear();
             Response.Redirect("Default.aspx");
         }
+
     }
 }
