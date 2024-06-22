@@ -32,16 +32,16 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img class="img-fluid rounded-8" src="Images/Banners/ads1.jpg" />
+                <img class="img-fluid rounded-8" src="Images/Banners/adsA.jpg" />
             </div>
             <div class="col">
-                <img class="img-fluid rounded-8" src="Images/Banners/ads2.jpg" />
+                <img class="img-fluid rounded-8" src="Images/Banners/adsB.jpg" />
             </div>
             <div class="col">
-                <img class="img-fluid rounded-8" src="Images/Banners/ads3.jpg" />
+                <img class="img-fluid rounded-8" src="Images/Banners/adsC.jpg" />
             </div>
             <div class="col">
-                <img class="img-fluid rounded-8" src="Images/Banners/ads4.jpg" />
+                <img class="img-fluid rounded-8" src="Images/Banners/adsD.jpg" />
             </div>
         </div>
     </div>
