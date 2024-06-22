@@ -5,7 +5,7 @@
 <head runat="server">
     <title>Login - GroceriesOnline</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="Styles/Style.css" rel="stylesheet" />
     <style>
         body {
@@ -72,11 +72,11 @@
         <form id="form1" runat="server">
             <div class="login-container">
                 <h2>Login</h2>
-                <asp:Label ID="Label1" runat="server" Text="Please enter your credentials" ForeColor="Red" Visible="false"></asp:Label>
+                <asp:Label ID="lblStatus" runat="server" ForeColor="Red"></asp:Label>
                 <label for="username">Username</label>
-                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" ErrorMessage="Please enter your Username" ControlToValidate="txtUsername" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                 <label for="password">Password</label>
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" ErrorMessage="Please enter your password" ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" CssClass="btn btn-primary mt-3 mx-auto" />
                 <p class="text-center mt-3">Don't have account yet? <asp:HyperLink ID="RegisterLink" runat="server" NavigateUrl="Register.aspx" CssClass="register-link">Register</asp:HyperLink></p>
             </div>
