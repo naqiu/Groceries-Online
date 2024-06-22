@@ -76,11 +76,51 @@
     <Content Include="Images\Banners\1716191990027.jpg" />
     <Content Include="Images\Banners\1717202953695.png" />
     <Content Include="Images\Banners\1717634727094.jpg" />
+<<<<<<< Updated upstream
     <Content Include="Images\Banners\adsA.jpg" />
     <Content Include="Images\Banners\adsB.jpg" />
     <Content Include="Images\Banners\adsC.jpg" />
     <Content Include="Images\Banners\adsD.jpg" />
+=======
+    <Content Include="Images\Banners\ads1.jpg" />
+    <Content Include="Images\Banners\ads2.jpg" />
+    <Content Include="Images\Banners\ads3.jpg" />
+    <Content Include="Images\Banners\ads4.jpg" />
+    <Content Include="Images\Items\1.png" />
+    <Content Include="Images\Items\10.png" />
+    <Content Include="Images\Items\11.png" />
+    <Content Include="Images\Items\12.png" />
+    <Content Include="Images\Items\13.png" />
+    <Content Include="Images\Items\14.png" />
+    <Content Include="Images\Items\15.png" />
+    <Content Include="Images\Items\16.png" />
+    <Content Include="Images\Items\17.png" />
+    <Content Include="Images\Items\18.png" />
+    <Content Include="Images\Items\19.png" />
+    <Content Include="Images\Items\2.png" />
+    <Content Include="Images\Items\20.png" />
+    <Content Include="Images\Items\21.png" />
+    <Content Include="Images\Items\22.png" />
+    <Content Include="Images\Items\23.png" />
+    <Content Include="Images\Items\24.png" />
+    <Content Include="Images\Items\25.png" />
+    <Content Include="Images\Items\26.png" />
+    <Content Include="Images\Items\27.png" />
+    <Content Include="Images\Items\28.png" />
+    <Content Include="Images\Items\29.png" />
+    <Content Include="Images\Items\3.png" />
+    <Content Include="Images\Items\30.png" />
+    <Content Include="Images\Items\31.png" />
+    <Content Include="Images\Items\32.png" />
+    <Content Include="Images\Items\4.png" />
+    <Content Include="Images\Items\5.png" />
+    <Content Include="Images\Items\6.png" />
+    <Content Include="Images\Items\7.png" />
+    <Content Include="Images\Items\8.png" />
+    <Content Include="Images\Items\9.png" />
+>>>>>>> Stashed changes
     <Content Include="Images\ujcegltl.png" />
+    <Content Include="Location.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Shop.aspx" />
@@ -99,6 +139,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -146,16 +193,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Items\1.webp" />
-    <Content Include="Images\Items\10.webp" />
-    <Content Include="Images\Items\2.webp" />
-    <Content Include="Images\Items\3.webp" />
-    <Content Include="Images\Items\4.webp" />
-    <Content Include="Images\Items\5.webp" />
-    <Content Include="Images\Items\6.webp" />
-    <Content Include="Images\Items\7.webp" />
-    <Content Include="Images\Items\8.webp" />
-    <Content Include="Images\Items\9.webp" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">

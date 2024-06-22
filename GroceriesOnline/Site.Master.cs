@@ -11,6 +11,14 @@ namespace GroceriesOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((string)Session["Role"] == "admin")
+            {
+                HyperLink4.Visible = true;
+                HyperLink2.Visible = false;
+                HyperLink3.Visible = false;
+            }
+
+
         }
     }
 }
