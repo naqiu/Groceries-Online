@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|c:\\repos\\github\\groceries-online\\groceriesonline\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|C:\\Repos\\GitHub\\Groceries-Online\\groceriesonline\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -79,8 +79,7 @@
               "RelativeToolTip": "GroceriesOnline\\Location.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T18:53:25.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T18:53:25.852Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "GroceriesOnline\\Admin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T17:11:50.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T17:11:50.051Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "GroceriesOnline\\Shop.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T16:33:06.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T16:33:06.22Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "GroceriesOnline\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T15:54:01.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T15:54:01.877Z"
             }
           ]
         }
