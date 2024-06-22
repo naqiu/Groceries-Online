@@ -76,12 +76,6 @@
     <Content Include="Images\Banners\1716191990027.jpg" />
     <Content Include="Images\Banners\1717202953695.png" />
     <Content Include="Images\Banners\1717634727094.jpg" />
-<<<<<<< Updated upstream
-    <Content Include="Images\Banners\adsA.jpg" />
-    <Content Include="Images\Banners\adsB.jpg" />
-    <Content Include="Images\Banners\adsC.jpg" />
-    <Content Include="Images\Banners\adsD.jpg" />
-=======
     <Content Include="Images\Banners\ads1.jpg" />
     <Content Include="Images\Banners\ads2.jpg" />
     <Content Include="Images\Banners\ads3.jpg" />
@@ -118,7 +112,6 @@
     <Content Include="Images\Items\7.png" />
     <Content Include="Images\Items\8.png" />
     <Content Include="Images\Items\9.png" />
->>>>>>> Stashed changes
     <Content Include="Images\ujcegltl.png" />
     <Content Include="Location.aspx" />
     <Content Include="Login.aspx" />
