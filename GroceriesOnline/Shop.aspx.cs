@@ -42,7 +42,7 @@ namespace GroceriesOnline
         {
             lblItemId.Text = GridViewItems.SelectedRow.Cells[1].Text;
             lblItemTitle.Text = GridViewItems.SelectedRow.Cells[2].Text;
-            lblItemPrice.Text = GridViewItems.SelectedRow.Cells[3].Text;
+            lblItemPrice.Text = GridViewItems.SelectedRow.Cells[4].Text;
         }
 
         void SalesAddItem()
@@ -272,13 +272,6 @@ namespace GroceriesOnline
 
         }
 
-        protected void GridViewItems_SelectedIndexChanged1(object sender, EventArgs e)
-        {
-            lblItemId.Text = GridViewItems.SelectedRow.Cells[1].Text;
-            lblItemTitle.Text = GridViewItems.SelectedRow.Cells[2].Text;
-            lblItemPrice.Text = GridViewItems.SelectedRow.Cells[3].Text;
-
-        }
 
         protected void btnAddItem_Click1(object sender, EventArgs e)
         {

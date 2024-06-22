@@ -11,7 +11,7 @@
       <asp:DropDownList ID="ddlCategory" runat="server" AutoPostBack="True" DataSourceID="sdsCategory" DataTextField="CatTitle" DataValueField="CatId" CssClass="form-control fit-content mt-1 mb-1">
       </asp:DropDownList>
             </p>
-            <asp:GridView ID="GridViewItems" runat="server" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="sdsItem" AllowPaging="True" AllowSorting="True" CssClass="table table-hover" GridLines="None" BorderStyle="None" OnSelectedIndexChanged="GridViewItems_SelectedIndexChanged1">
+            <asp:GridView ID="GridViewItems" runat="server" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="sdsItem" AllowPaging="True" AllowSorting="True" CssClass="table table-hover" GridLines="None" BorderStyle="None" OnSelectedIndexChanged="GridViewItems_SelectedIndexChanged" PageSize="7">
                 <Columns>
                     <asp:ImageField DataImageUrlField="ItemImage" DataImageUrlFormatString="Images/Items/{0}">
                         <ControlStyle Width="70px" />
@@ -19,7 +19,7 @@
                     <asp:BoundField DataField="ItemId" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="ItemId" />
                     <asp:BoundField DataField="ItemTitle" HeaderText="Item" SortExpression="ItemTitle" />
                     <asp:BoundField DataField="ItemDesc" HeaderText="Description" SortExpression="ItemDesc" />
-                    <asp:BoundField DataField="ItemPrice" HeaderText="Price" SortExpression="ItemPrice" DataFormatString="{0:2}" FooterText="RM" />
+                    <asp:BoundField DataField="ItemPrice" HeaderText="Price" SortExpression="ItemPrice" DataFormatString="{0:c2}"  />
                     <asp:CommandField ButtonType="Button" ShowHeader="True" ShowSelectButton="True" ControlStyle-CssClass="btn btn-outline-primary" >
 <ControlStyle CssClass="btn btn-outline-primary"></ControlStyle>
                     </asp:CommandField>
@@ -53,14 +53,15 @@
             </p>
             <p>
 
-                <asp:GridView ID="GridViewCart" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceCart">
+                <asp:GridView ID="GridViewCart" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceCart" CssClass="table table-hover" GridLines="None" BorderStyle="None"  Width="450px">
                     <Columns>
                         <asp:BoundField DataField="ItemId" HeaderText="Item Id" SortExpression="ItemId" />
                         <asp:BoundField DataField="ItemTitle" HeaderText="Item Title" SortExpression="ItemTitle" />
-                        <asp:BoundField DataField="ItemPrice" HeaderText="Item Price" SortExpression="ItemPrice" />
+                        <asp:BoundField DataField="ItemPrice" HeaderText="Item Price" SortExpression="ItemPrice" DataFormatString="{0:c2}" />
                         <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                        <asp:BoundField DataField="SubTotal" HeaderText="SubTotal" ReadOnly="True" SortExpression="SubTotal" />
+                        <asp:BoundField DataField="SubTotal" HeaderText="SubTotal" ReadOnly="True" SortExpression="SubTotal" DataFormatString="{0:c2}"/>
                     </Columns>
+                    <HeaderStyle CssClass="th" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSourceCart" runat="server" ConnectionString="<%$ ConnectionStrings:connGrocerShop %>" SelectCommand="spSalesGetItems" SelectCommandType="StoredProcedure">
                     <SelectParameters>

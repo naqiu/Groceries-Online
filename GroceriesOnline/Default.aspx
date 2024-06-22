@@ -45,18 +45,5 @@
             </div>
         </div>
     </div>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="SqlDataSource1" AllowPaging="True">
-    <Columns>
-        <asp:BoundField DataField="ItemId" HeaderText="ItemId" InsertVisible="False" ReadOnly="True" SortExpression="ItemId" />
-        <asp:BoundField DataField="CatId" HeaderText="CatId" SortExpression="CatId" />
-        <asp:BoundField DataField="ItemTitle" HeaderText="ItemTitle" SortExpression="ItemTitle" />
-        <asp:BoundField DataField="ItemPrice" HeaderText="ItemPrice" SortExpression="ItemPrice" />
-        <asp:BoundField DataField="ItemDesc" HeaderText="ItemDesc" SortExpression="ItemDesc" />
-        <asp:ImageField DataImageUrlField="ItemImage" DataImageUrlFormatString="Images/Items/{0}" HeaderText="Image">
-            <ControlStyle Width="70px" />
-        </asp:ImageField>
-    </Columns>
-</asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connGrocerShop %>" SelectCommand="SELECT * FROM [Item]"></asp:SqlDataSource>
-
-</asp:Content>
+    </asp:Content>
