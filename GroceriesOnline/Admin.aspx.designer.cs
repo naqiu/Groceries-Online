@@ -11,7 +11,7 @@ namespace GroceriesOnline
 {
 
 
-    public partial class Default
+    public partial class WebForm1
     {
 
         /// <summary>

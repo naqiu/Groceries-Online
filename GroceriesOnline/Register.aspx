@@ -5,7 +5,7 @@
 <head runat="server">
     <title>Register - GroceriesOnline</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link href="Styles/Style.css" rel="stylesheet" />
     <style>
         body {
@@ -67,15 +67,14 @@
         <form id="form1" runat="server">
             <div class="register-container">
                 <h2>Register</h2>
-                <asp:Label ID="Label1" runat="server" Text="Please enter your details" ForeColor="Red" Visible="false"></asp:Label>
+                <asp:Label ID="lblStatus" runat="server" ForeColor="Red"></asp:Label>
                 <label for="username">Username</label>
-                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox>
-                <label for="email">Email</label>
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidatorUsername" runat="server" ErrorMessage="Please enter your Username" ControlToValidate="txtUsername" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+          
                 <label for="password">Password</label>
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" ErrorMessage="Please enter your password" ControlToValidate="txtPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                 <label for="confirmPassword">Confirm Password</label>
-                <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter your Confirm Password" ControlToValidate="txtConfirmPassword" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" CssClass="btn btn-primary mt-3 mx-auto" />
                 <p class="text-center mt-3">Already register? <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="Login.aspx" CssClass="login-link">Login</asp:HyperLink></p>
             </div>
