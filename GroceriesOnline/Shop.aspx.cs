@@ -15,8 +15,10 @@ namespace GroceriesOnline
         static double totalAmount;
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (Session["Role"] == null)
-                Response.Redirect("Default(3031).aspx");*/
+            if (Session["Role"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
 
             if (!IsPostBack)
             {
@@ -45,24 +47,34 @@ namespace GroceriesOnline
 
         void SalesAddItem()
         {
-            // Create connection
+            
+            string sql = @"SELECT * FROM Users WHERE UserName = @username";
             SqlConnection conn = new SqlConnection(ConfigurationManager.
                 ConnectionStrings["connGrocerShop"].ConnectionString);
 
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@username",Session["UserName"]);
+            
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            Object objUserId = dt.Rows[0]["UserId"];
+
             // Create command object with Stored Procedure name
-            SqlCommand cmd = new SqlCommand("spSalesAddItem", conn);
+            SqlCommand cmd2 = new SqlCommand("spSalesAddItem", conn);
 
             // Set command object for stored procedure execution
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
-            cmd.Parameters.AddWithValue("@itemid", lblItemId.Text);
-            cmd.Parameters.AddWithValue("@quantity", txtQuantity.Text);
+            cmd2.CommandType = CommandType.StoredProcedure;
+            cmd2.Parameters.AddWithValue("@salesid", lblSalesId.Text);
+            cmd2.Parameters.AddWithValue("@userid", objUserId);
+            cmd2.Parameters.AddWithValue("@itemid", lblItemId.Text);
+            cmd2.Parameters.AddWithValue("@quantity", txtQuantity.Text);
 
             try
             {
                 // Open connection
                 conn.Open();
-                cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
             }
             catch (SqlException ex)
             {
