@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Repos\\GitHub\\Groceries-Online\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|c:\\repos\\github\\groceries-online\\groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|c:\\repos\\github\\groceries-online\\groceriesonline\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{04B6178B-984C-4EA7-A1C2-9561E29B55C5}|GroceriesOnline\\GroceriesOnline.csproj|solutionrelative:groceriesonline\\admin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -32,11 +36,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Style.css",
+              "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Styles\\Style.css",
+              "RelativeDocumentMoniker": "GroceriesOnline\\Styles\\Style.css",
+              "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Styles\\Style.css",
+              "RelativeToolTip": "GroceriesOnline\\Styles\\Style.css",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-22T21:21:50.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "dbo.Sales [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__REPOS_GITHUB_GROCERIES_ONLINE_X_GROCERIES_ONLINE_GROCERIESONLINE_APP_DATA_ONLINESHOPDB.MDF/True/SqlTable/dbo.Sales.sql",
               "ToolTip": "dbo.Sales [Data]",
@@ -45,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "dbo.Item [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__REPOS_GITHUB_GROCERIES_ONLINE_X_GROCERIES_ONLINE_GROCERIESONLINE_APP_DATA_ONLINESHOPDB.MDF/True/SqlTable/dbo.Item.sql",
               "ToolTip": "dbo.Item [Data]",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Location.aspx",
               "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Location.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Location.aspx",
@@ -62,11 +79,12 @@
               "RelativeToolTip": "GroceriesOnline\\Location.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T18:53:25.852Z"
+              "WhenOpened": "2024-06-22T18:53:25.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Admin.aspx",
               "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Admin.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Admin.aspx",
@@ -79,19 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Shop.aspx",
               "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Shop.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Shop.aspx",
               "ToolTip": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Shop.aspx",
               "RelativeToolTip": "GroceriesOnline\\Shop.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T16:33:06.22Z"
+              "WhenOpened": "2024-06-22T16:33:06.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Repos\\GitHub\\Groceries-Online\\GroceriesOnline\\Default.aspx",
               "RelativeDocumentMoniker": "GroceriesOnline\\Default.aspx",
@@ -99,7 +118,8 @@
               "RelativeToolTip": "GroceriesOnline\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-22T15:54:01.877Z"
+              "WhenOpened": "2024-06-22T15:54:01.877Z",
+              "EditorCaption": ""
             }
           ]
         }

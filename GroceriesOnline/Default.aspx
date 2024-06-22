@@ -30,7 +30,7 @@
         </a>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="padding-bottom:20px;">
             <div class="col">
                 <img class="img-fluid rounded-8" src="Images/Banners/adsA.jpg" />
             </div>
@@ -44,6 +44,18 @@
                 <img class="img-fluid rounded-8" src="Images/Banners/adsD.jpg" />
             </div>
         </div>
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ItemId" DataSourceID="SqlDataSource1" Width="100%" CssClass="table table-hover" GridLines="None" BorderStyle="None" PageSize="6">
+    <Columns>
+        <asp:BoundField DataField="ItemTitle" HeaderText="ItemTitle" SortExpression="ItemTitle" />
+        <asp:BoundField DataField="ItemPrice" HeaderText="ItemPrice" SortExpression="ItemPrice" DataFormatString="{0:c2}" />
+        <asp:BoundField DataField="ItemDesc" HeaderText="ItemDesc" SortExpression="ItemDesc" />
+        <asp:ImageField DataImageUrlField="ItemImage" DataImageUrlFormatString="Images/Items/{0}" HeaderText="Image">
+            <ControlStyle Height="70px" />
+        </asp:ImageField>
+    </Columns>
+    <HeaderStyle CssClass="th" />
+</asp:GridView>
     </div>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:connGrocerShop %>" SelectCommand="SELECT * FROM [Item]"></asp:SqlDataSource>
+    
     </asp:Content>
