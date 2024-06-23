@@ -69,6 +69,7 @@ namespace GroceriesOnline
             cmd2.Parameters.AddWithValue("@userid", objUserId);
             cmd2.Parameters.AddWithValue("@itemid", lblItemId.Text);
             cmd2.Parameters.AddWithValue("@quantity", txtQuantity.Text);
+            
 
             try
             {
@@ -120,41 +121,10 @@ namespace GroceriesOnline
             }
         }
 
-        void SalesConfirm()
-        {
-
-            // Create connection
-            SqlConnection conn = new SqlConnection(ConfigurationManager.
-            ConnectionStrings["connGrocerShop"].ConnectionString);
-
-            // Create command object with Stored Procedure name
-            SqlCommand cmd = new SqlCommand("spSalesConfirm", conn);
-
-            // Set command object for stored procedure execution
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
-
-            try
-            {
-                // Open connection
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                lblMessage2.Text = "Sales confirmed!";
-            }
-
-            catch (SqlException ex)
-            {
-                lblMessage2.Text = ex.Message;
-            }
-            finally
-            {
-                conn.Close();
-            }
-            txtQuantity.Text = "1";
-        }
-
         void DisplayInvoice()
         {
+
+
             double serviceTax, amountAfterTax, amountRounded, rounding;
             serviceTax = totalAmount * 0.06;
             amountAfterTax = totalAmount + serviceTax;
@@ -166,6 +136,48 @@ namespace GroceriesOnline
             lblAmountAfterTax.Text = "Amount after tax: RM" + amountAfterTax.ToString("n2");
             lblRounding.Text = "Rounding: RM" + rounding.ToString("n2");
             lblAmountRounded.Text = "Amount to pay: RM" + amountRounded.ToString("n2");
+
+
+            // Create connection
+            SqlConnection conn = new SqlConnection(ConfigurationManager.
+            ConnectionStrings["connGrocerShop"].ConnectionString);
+
+            // Create command object with Stored Procedure name
+            SqlCommand cmd = new SqlCommand("spSalesConfirm", conn);
+            SqlCommand cmd2 = new SqlCommand("spsalesReport", conn);
+
+            // Set command object for stored procedure execution
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
+
+            cmd2.CommandType = CommandType.StoredProcedure;
+            cmd2.Parameters.AddWithValue("@salesid", lblSalesId.Text);
+            cmd2.Parameters.AddWithValue("@totalPayment", amountRounded);
+
+
+
+            try
+            {
+                // Open connection
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+                lblMessage2.Text = "Sales confirmed!";
+
+
+            }
+
+            catch (SqlException ex)
+            {
+                lblMessage2.Text = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            txtQuantity.Text = "1";
+
+            
         }
 
         void ClearAll()
@@ -220,11 +232,6 @@ namespace GroceriesOnline
             SalesGetTotalAmount();
         }
 
-        protected void btnConfirm_Click(object sender, EventArgs e)
-        {
-            SalesConfirm();
-            DisplayInvoice();
-        }
 
         protected void btnNew_Click(object sender, EventArgs e)
         {
@@ -247,7 +254,7 @@ namespace GroceriesOnline
 
         protected void btnConfirm_Click1(object sender, EventArgs e)
         {
-            SalesConfirm();
+ 
             DisplayInvoice();
         }
 

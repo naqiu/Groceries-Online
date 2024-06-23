@@ -118,6 +118,7 @@
     <Content Include="Register.aspx" />
     <Content Include="Shop.aspx" />
     <Content Include="Styles\Style.css" />
+    <Content Include="User.aspx" />
     <Content Include="UserControls\LoginStatus.ascx" />
     <Content Include="Web.config" />
     <Content Include="Admin.aspx" />
@@ -169,6 +170,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LoginStatus.ascx.cs">
       <DependentUpon>LoginStatus.ascx</DependentUpon>
