@@ -1,6 +1,19 @@
 ﻿<%@ Page Title="BitesShop - Shop" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Shop.aspx.cs" Inherits="GroceriesOnline.Shop" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            display: inline;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-clip: padding-box;
+            border-radius: 8px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            border: 1px solid #ced4da;
+            background-color: #fff;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
@@ -36,7 +49,7 @@
             </p>
             <p>
                 Quantity:
-       <asp:TextBox ID="txtQuantity" runat="server" TextMode="Number" Width="50px" CssClass="form-control">1</asp:TextBox>&nbsp;
+       <asp:TextBox ID="txtQuantity" runat="server" TextMode="Number" Width="93px" CssClass="auto-style1">1</asp:TextBox>&nbsp;
        <asp:Button ID="btnAddItem" runat="server" Text="Add Item to Cart" CssClass="btn" OnClick="btnAddItem_Click1" />
             </p>
             <p>

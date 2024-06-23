@@ -14,6 +14,7 @@ namespace GroceriesOnline
             if ((string)Session["Role"] == "admin")
             {
                 HyperLink4.Visible = true;
+                HyperLink8.Visible = true;
                 HyperLink2.Visible = false;
                 HyperLink3.Visible = false;
             }

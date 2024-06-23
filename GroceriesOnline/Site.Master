@@ -30,7 +30,8 @@
                 <nav class="nav">
                     <asp:HyperLink ID="HyperLink1" runat="server" CssClass="nav-link" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Shop.aspx" CssClass="nav-link">Shop</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin.aspx" CssClass="nav-link" Visible="False">Admin</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin.aspx" CssClass="nav-link" Visible="False">Reports</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/User.aspx" CssClass="nav-link" Visible="False">Users</asp:HyperLink>
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Location.aspx" CssClass="nav-link">Locations</asp:HyperLink>
                 </nav>
             </div>
